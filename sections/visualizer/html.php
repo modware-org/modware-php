@@ -3,6 +3,10 @@ require_once __DIR__ . '/../../config/env.php';
 require_once __DIR__ . '/../../config/Logger.php';
 require_once __DIR__ . '/../../config/Database.php';
 putenv("APP_NAME=visualizer");
+// Current path in browser
+$currentPath = parse_url($_SERVER['PHP_SELF'], PHP_URL_PATH);
+// current slug in browser
+$currentSlug = pathinfo($currentPath, PATHINFO_FILENAME);
 
 $logger = Logger::getInstance();
 $logger->log("Request started: " . $_SERVER['REQUEST_URI']);
@@ -126,7 +130,7 @@ try {
                     break;
             }
             // Redirect to prevent form resubmission
-            header("Location: " . $_SERVER['PHP_SELF']);
+            header("Location: " . $currentSlug);
             exit();
         }
     }
@@ -174,7 +178,7 @@ try {
     <!-- Add Site Form -->
     <div class="add-site-form">
         <h3>Add New Site</h3>
-        <form method="POST">
+        <form method="POST" action="<?php echo $currentSlug; ?>">
             <input type="hidden" name="action" value="add_site">
             <input type="text" name="name" placeholder="Site Name" required>
             <input type="text" name="domain" placeholder="Domain" required>
@@ -210,16 +214,16 @@ try {
                     <div><?= htmlspecialchars($site['info']['domain']) ?></div>
                     
                     <!-- Remove Site Form -->
-                    <form method="POST" class="remove-form">
+                    <form method="POST" class="remove-form" action="<?php echo $currentSlug; ?>">
                         <input type="hidden" name="action" value="remove_site">
                         <input type="hidden" name="site_id" value="<?= $site['info']['id'] ?>">
-                        <button type="submit" onclick="return confirm('Are you sure you want to remove this site and all its pages?')">Remove Site</button>
+                        <button type="submit" >Remove Site</button>
                     </form>
                     
                     <!-- Add Page Form -->
                     <div class="add-page-form">
                         <h4>Add New Page</h4>
-                        <form method="POST">
+                        <form method="POST" action="<?php echo $currentSlug; ?>">
                             <input type="hidden" name="action" value="add_page">
                             <input type="hidden" name="site_id" value="<?= $site['info']['id'] ?>">
                             <input type="text" name="title" placeholder="Page Title" required>
@@ -251,16 +255,16 @@ try {
                                 <div>Slug: <?= htmlspecialchars($page['info']['slug']) ?></div>
                                 
                                 <!-- Remove Page Form -->
-                                <form method="POST" class="remove-form">
+                                <form method="POST" class="remove-form" action="<?php echo $currentSlug; ?>">
                                     <input type="hidden" name="action" value="remove_page">
                                     <input type="hidden" name="page_id" value="<?= $page['info']['id'] ?>">
-                                    <button type="submit" onclick="return confirm('Are you sure you want to remove this page and all its sections?')">Remove Page</button>
+                                    <button type="submit" >Remove Page</button>
                                 </form>
                                 
                                 <!-- Add Section Form -->
-                                <div class="add-section-form">
+                                <div class="add-section-form" action="<?php echo $currentSlug; ?>">
                                     <h4>Add New Section</h4>
-                                    <form method="POST">
+                                    <form method="POST" action="<?php echo $currentSlug; ?>">
                                         <input type="hidden" name="action" value="add_section">
                                         <input type="hidden" name="page_id" value="<?= $page['info']['id'] ?>">
                                         <input type="text" name="name" placeholder="Section Name" required>
@@ -294,10 +298,10 @@ try {
                                                 <div class="section-position">Position: <span class="position-value"><?= $section['position'] ?></span></div>
                                                 
                                                 <!-- Remove Section Form -->
-                                                <form method="POST" class="remove-form">
+                                                <form method="POST" class="remove-form" action="<?php echo $currentSlug; ?>">
                                                     <input type="hidden" name="action" value="remove_section">
                                                     <input type="hidden" name="section_id" value="<?= $section['id'] ?>">
-                                                    <button type="submit" onclick="return confirm('Are you sure you want to remove this section?')">Remove Section</button>
+                                                    <button type="submit">Remove Section</button>
                                                 </form>
                                             </div>
                                         <?php endforeach; ?>
