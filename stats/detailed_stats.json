@@ -1,0 +1,2144 @@
+{
+  "total_files": 290,
+  "total_lines": 40492,
+  "files_by_extension": {
+    "no_extension": 2,
+    ".php": 148,
+    ".css": 28,
+    ".json": 4,
+    ".sql": 59,
+    ".md": 14,
+    ".sqlite": 4,
+    ".sh": 11,
+    ".js": 12,
+    ".yml": 2,
+    ".cfg": 1,
+    ".pdf": 1,
+    ".xml": 1,
+    ".py": 1,
+    ".html": 1,
+    ".txt": 1
+  },
+  "lines_by_extension": {
+    "no_extension": 212,
+    ".php": 16985,
+    ".css": 4161,
+    ".json": 10280,
+    ".sql": 2415,
+    ".md": 1712,
+    ".sqlite": 862,
+    ".sh": 434,
+    ".js": 1234,
+    ".yml": 83,
+    ".cfg": 5,
+    ".pdf": 1354,
+    ".xml": 20,
+    ".py": 187,
+    ".html": 230,
+    ".txt": 318
+  },
+  "directory_structure": {
+    "files": [
+      {
+        "name": "LICENSE",
+        "extension": "no_extension",
+        "lines": 169
+      },
+      {
+        "name": "404.php",
+        "extension": ".php",
+        "lines": 60
+      },
+      {
+        "name": "500.php",
+        "extension": ".php",
+        "lines": 95
+      },
+      {
+        "name": "Cert_Unity_241108_073542.pdf",
+        "extension": ".pdf",
+        "lines": 1354
+      },
+      {
+        "name": "CHANGELOG.md",
+        "extension": ".md",
+        "lines": 36
+      },
+      {
+        "name": "composer.json",
+        "extension": ".json",
+        "lines": 15
+      },
+      {
+        "name": "database.sqlite",
+        "extension": ".sqlite",
+        "lines": 702
+      },
+      {
+        "name": "database.sqlite_admin.sqlite",
+        "extension": ".sqlite",
+        "lines": 128
+      },
+      {
+        "name": "diagnostic_errors.json",
+        "extension": ".json",
+        "lines": 27
+      },
+      {
+        "name": "docker-compose.yml",
+        "extension": ".yml",
+        "lines": 26
+      },
+      {
+        "name": "Dockerfile",
+        "extension": "no_extension",
+        "lines": 43
+      },
+      {
+        "name": "footer.php",
+        "extension": ".php",
+        "lines": 2
+      },
+      {
+        "name": "header.php",
+        "extension": ".php",
+        "lines": 76
+      },
+      {
+        "name": "index.php",
+        "extension": ".php",
+        "lines": 197
+      },
+      {
+        "name": "install.php",
+        "extension": ".php",
+        "lines": 193
+      },
+      {
+        "name": "install.sh",
+        "extension": ".sh",
+        "lines": 107
+      },
+      {
+        "name": "menu-section.php",
+        "extension": ".php",
+        "lines": 109
+      },
+      {
+        "name": "migration_add_footer_tables.sql",
+        "extension": ".sql",
+        "lines": 26
+      },
+      {
+        "name": "migration_add_languages.sql",
+        "extension": ".sql",
+        "lines": 121
+      },
+      {
+        "name": "phpunit.xml",
+        "extension": ".xml",
+        "lines": 20
+      },
+      {
+        "name": "README.md",
+        "extension": ".md",
+        "lines": 105
+      },
+      {
+        "name": "run_tests.sh",
+        "extension": ".sh",
+        "lines": 10
+      },
+      {
+        "name": "schema.sql",
+        "extension": ".sql",
+        "lines": 87
+      },
+      {
+        "name": "start.sh",
+        "extension": ".sh",
+        "lines": 4
+      },
+      {
+        "name": "styles.css",
+        "extension": ".css",
+        "lines": 514
+      },
+      {
+        "name": "test.php",
+        "extension": ".php",
+        "lines": 4
+      },
+      {
+        "name": "test.sh",
+        "extension": ".sh",
+        "lines": 161
+      },
+      {
+        "name": "TODO.md",
+        "extension": ".md",
+        "lines": 44
+      },
+      {
+        "name": "stats.py",
+        "extension": ".py",
+        "lines": 187
+      },
+      {
+        "name": "stats.html",
+        "extension": ".html",
+        "lines": 230
+      }
+    ],
+    "directories": {
+      "admin": {
+        "files": [
+          {
+            "name": "login.php",
+            "extension": ".php",
+            "lines": 93
+          },
+          {
+            "name": "styles.css",
+            "extension": ".css",
+            "lines": 278
+          },
+          {
+            "name": "index.php",
+            "extension": ".php",
+            "lines": 106
+          },
+          {
+            "name": "logout.php",
+            "extension": ".php",
+            "lines": 13
+          },
+          {
+            "name": "reset_password.php",
+            "extension": ".php",
+            "lines": 29
+          },
+          {
+            "name": "hash_password.php",
+            "extension": ".php",
+            "lines": 33
+          },
+          {
+            "name": "diagnostic_errors.json",
+            "extension": ".json",
+            "lines": 27
+          },
+          {
+            "name": "auth.php",
+            "extension": ".php",
+            "lines": 27
+          },
+          {
+            "name": "header.php",
+            "extension": ".php",
+            "lines": 90
+          },
+          {
+            "name": "footer.php",
+            "extension": ".php",
+            "lines": 4
+          },
+          {
+            "name": "install.php",
+            "extension": ".php",
+            "lines": 109
+          },
+          {
+            "name": "schema.sql",
+            "extension": ".sql",
+            "lines": 99
+          },
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 158
+          },
+          {
+            "name": "admin.sqlite",
+            "extension": ".sqlite",
+            "lines": 0
+          }
+        ],
+        "directories": {
+          "pages": {
+            "files": [
+              {
+                "name": "dashboard.php",
+                "extension": ".php",
+                "lines": 42
+              },
+              {
+                "name": "content.php",
+                "extension": ".php",
+                "lines": 42
+              },
+              {
+                "name": "menu.php",
+                "extension": ".php",
+                "lines": 330
+              },
+              {
+                "name": "seo.php",
+                "extension": ".php",
+                "lines": 229
+              },
+              {
+                "name": "config.php",
+                "extension": ".php",
+                "lines": 255
+              },
+              {
+                "name": "media.php",
+                "extension": ".php",
+                "lines": 356
+              },
+              {
+                "name": "pages.php",
+                "extension": ".php",
+                "lines": 359
+              },
+              {
+                "name": "sections.php",
+                "extension": ".php",
+                "lines": 140
+              },
+              {
+                "name": "components.php",
+                "extension": ".php",
+                "lines": 100
+              },
+              {
+                "name": "diagnostics.php",
+                "extension": ".php",
+                "lines": 76
+              },
+              {
+                "name": "integrations.php",
+                "extension": ".php",
+                "lines": 264
+              },
+              {
+                "name": "visualizer.php",
+                "extension": ".php",
+                "lines": 187
+              }
+            ],
+            "directories": {}
+          },
+          "config": {
+            "files": [
+              {
+                "name": "Database.php",
+                "extension": ".php",
+                "lines": 98
+              },
+              {
+                "name": "env.php",
+                "extension": ".php",
+                "lines": 34
+              }
+            ],
+            "directories": {}
+          },
+          "scripts": {
+            "files": [
+              {
+                "name": "create_user.php",
+                "extension": ".php",
+                "lines": 149
+              }
+            ],
+            "directories": {}
+          },
+          "api": {
+            "files": [
+              {
+                "name": "Api.php",
+                "extension": ".php",
+                "lines": 72
+              },
+              {
+                "name": "index.php",
+                "extension": ".php",
+                "lines": 52
+              }
+            ],
+            "directories": {
+              "endpoints": {
+                "files": [
+                  {
+                    "name": "auth.php",
+                    "extension": ".php",
+                    "lines": 118
+                  },
+                  {
+                    "name": "menu.php",
+                    "extension": ".php",
+                    "lines": 83
+                  },
+                  {
+                    "name": "pages.php",
+                    "extension": ".php",
+                    "lines": 136
+                  },
+                  {
+                    "name": "sections.php",
+                    "extension": ".php",
+                    "lines": 41
+                  },
+                  {
+                    "name": "seo.php",
+                    "extension": ".php",
+                    "lines": 76
+                  },
+                  {
+                    "name": "sitemap.php",
+                    "extension": ".php",
+                    "lines": 46
+                  }
+                ],
+                "directories": {}
+              }
+            }
+          }
+        }
+      },
+      "api": {
+        "files": [
+          {
+            "name": "Api.php",
+            "extension": ".php",
+            "lines": 216
+          },
+          {
+            "name": "index.php",
+            "extension": ".php",
+            "lines": 157
+          },
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 196
+          }
+        ],
+        "directories": {
+          "endpoints": {
+            "files": [
+              {
+                "name": "auth.php",
+                "extension": ".php",
+                "lines": 97
+              },
+              {
+                "name": "seo.php",
+                "extension": ".php",
+                "lines": 76
+              },
+              {
+                "name": "pages.php",
+                "extension": ".php",
+                "lines": 136
+              },
+              {
+                "name": "menu.php",
+                "extension": ".php",
+                "lines": 83
+              },
+              {
+                "name": "sections.php",
+                "extension": ".php",
+                "lines": 41
+              },
+              {
+                "name": "sitemap.php",
+                "extension": ".php",
+                "lines": 46
+              }
+            ],
+            "directories": {}
+          },
+          "tests": {
+            "files": [
+              {
+                "name": "api_tests.sh",
+                "extension": ".sh",
+                "lines": 114
+              },
+              {
+                "name": "README.md",
+                "extension": ".md",
+                "lines": 124
+              }
+            ],
+            "directories": {}
+          }
+        }
+      },
+      "components": {
+        "files": [
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 142
+          }
+        ],
+        "directories": {
+          "upload": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 69
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 107
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 143
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 59
+              },
+              {
+                "name": "api.php",
+                "extension": ".php",
+                "lines": 146
+              }
+            ],
+            "directories": {}
+          },
+          "files": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 98
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 190
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 144
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 85
+              },
+              {
+                "name": "api.php",
+                "extension": ".php",
+                "lines": 199
+              }
+            ],
+            "directories": {}
+          },
+          "gallery": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 129
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 217
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 173
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 136
+              },
+              {
+                "name": "api.php",
+                "extension": ".php",
+                "lines": 270
+              }
+            ],
+            "directories": {}
+          }
+        }
+      },
+      "config": {
+        "files": [
+          {
+            "name": "database.php",
+            "extension": ".php",
+            "lines": 18
+          },
+          {
+            "name": "Database.php",
+            "extension": ".php",
+            "lines": 98
+          },
+          {
+            "name": "env.php",
+            "extension": ".php",
+            "lines": 80
+          },
+          {
+            "name": "Logger.php",
+            "extension": ".php",
+            "lines": 93
+          }
+        ],
+        "directories": {}
+      },
+      "home1": {
+        "files": [
+          {
+            "name": "program-section.php",
+            "extension": ".php",
+            "lines": 58
+          },
+          {
+            "name": "indications-section.php",
+            "extension": ".php",
+            "lines": 57
+          },
+          {
+            "name": "about-section.php",
+            "extension": ".php",
+            "lines": 67
+          },
+          {
+            "name": "header-section.php",
+            "extension": ".php",
+            "lines": 10
+          },
+          {
+            "name": "combined_schema.sql",
+            "extension": ".sql",
+            "lines": 157
+          }
+        ],
+        "directories": {}
+      },
+      "img": {
+        "files": [],
+        "directories": {}
+      },
+      "integrations": {
+        "files": [
+          {
+            "name": "schema.sql",
+            "extension": ".sql",
+            "lines": 42
+          },
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 156
+          }
+        ],
+        "directories": {
+          "shortcodes": {
+            "files": [],
+            "directories": {
+              "examples": {
+                "files": [
+                  {
+                    "name": "YouTubeShortcode.php",
+                    "extension": ".php",
+                    "lines": 35
+                  }
+                ],
+                "directories": {}
+              },
+              "core": {
+                "files": [
+                  {
+                    "name": "ShortcodeProcessor.php",
+                    "extension": ".php",
+                    "lines": 26
+                  },
+                  {
+                    "name": "TranslationProcessor.php",
+                    "extension": ".php",
+                    "lines": 51
+                  }
+                ],
+                "directories": {}
+              }
+            }
+          },
+          "webhooks": {
+            "files": [],
+            "directories": {
+              "examples": {
+                "files": [
+                  {
+                    "name": "ContentUpdateWebhook.php",
+                    "extension": ".php",
+                    "lines": 71
+                  }
+                ],
+                "directories": {}
+              },
+              "core": {
+                "files": [
+                  {
+                    "name": "WebhookProcessor.php",
+                    "extension": ".php",
+                    "lines": 73
+                  }
+                ],
+                "directories": {}
+              }
+            }
+          },
+          "api": {
+            "files": [],
+            "directories": {
+              "examples": {
+                "files": [
+                  {
+                    "name": "TranslationEndpoint.php",
+                    "extension": ".php",
+                    "lines": 125
+                  }
+                ],
+                "directories": {}
+              },
+              "core": {
+                "files": [
+                  {
+                    "name": "ApiProcessor.php",
+                    "extension": ".php",
+                    "lines": 104
+                  }
+                ],
+                "directories": {}
+              }
+            }
+          }
+        }
+      },
+      "js": {
+        "files": [
+          {
+            "name": "main.js",
+            "extension": ".js",
+            "lines": 4
+          }
+        ],
+        "directories": {}
+      },
+      "modules": {
+        "files": [
+          {
+            "name": "schema.sql",
+            "extension": ".sql",
+            "lines": 30
+          },
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 80
+          }
+        ],
+        "directories": {
+          "blog": {
+            "files": [
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 114
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 221
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 13
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 414
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 202
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 665
+              }
+            ],
+            "directories": {
+              "templates": {
+                "files": [
+                  {
+                    "name": "list.php",
+                    "extension": ".php",
+                    "lines": 204
+                  },
+                  {
+                    "name": "single.php",
+                    "extension": ".php",
+                    "lines": 195
+                  }
+                ],
+                "directories": {}
+              }
+            }
+          },
+          "rss": {
+            "files": [
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 62
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 236
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 31
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 539
+              }
+            ],
+            "directories": {}
+          },
+          "sitemap": {
+            "files": [
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 39
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 259
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 27
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 501
+              }
+            ],
+            "directories": {}
+          }
+        }
+      },
+      "scripts": {
+        "files": [
+          {
+            "name": "create_user.php",
+            "extension": ".php",
+            "lines": 128
+          },
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 157
+          },
+          {
+            "name": "create_team_page.php",
+            "extension": ".php",
+            "lines": 37
+          },
+          {
+            "name": "run_footer_migration.php",
+            "extension": ".php",
+            "lines": 42
+          },
+          {
+            "name": "migrate_footer_tables.sh",
+            "extension": ".sh",
+            "lines": 5
+          },
+          {
+            "name": "setup_visualizer_page.sql",
+            "extension": ".sql",
+            "lines": 34
+          },
+          {
+            "name": "setup_visualizer_page.sh",
+            "extension": ".sh",
+            "lines": 2
+          },
+          {
+            "name": "migrate_section_translations.sql",
+            "extension": ".sql",
+            "lines": 20
+          },
+          {
+            "name": "migrate_section_translations.sh",
+            "extension": ".sh",
+            "lines": 2
+          },
+          {
+            "name": "fix_section_translations.sql",
+            "extension": ".sql",
+            "lines": 6
+          },
+          {
+            "name": "fix_section_translations.sh",
+            "extension": ".sh",
+            "lines": 2
+          },
+          {
+            "name": "add_visualizer_page.sql",
+            "extension": ".sql",
+            "lines": 34
+          },
+          {
+            "name": "migrate_visualizer_page.sh",
+            "extension": ".sh",
+            "lines": 3
+          }
+        ],
+        "directories": {}
+      },
+      "sections": {
+        "files": [
+          {
+            "name": "index.php",
+            "extension": ".php",
+            "lines": 195
+          },
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 109
+          }
+        ],
+        "directories": {
+          "hero": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 16
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 24
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 67
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 34
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 0
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 116
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 14
+              }
+            ],
+            "directories": {}
+          },
+          "about": {
+            "files": [
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 42
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 56
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 83
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 58
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 24
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 355
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 19
+              }
+            ],
+            "directories": {}
+          },
+          "indications": {
+            "files": [
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 31
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 34
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 123
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 75
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 11
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 260
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 30
+              }
+            ],
+            "directories": {}
+          },
+          "program": {
+            "files": [
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 30
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 37
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 150
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 104
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 11
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 320
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 24
+              }
+            ],
+            "directories": {}
+          },
+          "footer": {
+            "files": [
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 22
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 134
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 56
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 121
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 451
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 31
+              }
+            ],
+            "directories": {}
+          },
+          "menu": {
+            "files": [
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 31
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 195
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 168
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 336
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 135
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 540
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 25
+              }
+            ],
+            "directories": {}
+          },
+          "media": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 51
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 150
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 95
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 45
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 197
+              }
+            ],
+            "directories": {}
+          },
+          "meta": {
+            "files": [
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 24
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 93
+              },
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 28
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 136
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 20
+              }
+            ],
+            "directories": {}
+          },
+          "example": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 32
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 88
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 132
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 112
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 34
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 75
+              }
+            ],
+            "directories": {}
+          },
+          "about-intro": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 18
+              }
+            ],
+            "directories": {}
+          },
+          "team": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 90
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 97
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 12
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 55
+              }
+            ],
+            "directories": {}
+          },
+          "certification": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 66
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 99
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 37
+              }
+            ],
+            "directories": {}
+          },
+          "specialists-intro": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 46
+              }
+            ],
+            "directories": {}
+          },
+          "team-full": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 83
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 81
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 63
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 154
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 265
+              }
+            ],
+            "directories": {}
+          },
+          "contact-info": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 22
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 55
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 78
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 9
+              }
+            ],
+            "directories": {}
+          },
+          "contact-form": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 51
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 65
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 219
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 18
+              }
+            ],
+            "directories": {}
+          },
+          "map": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 16
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 40
+              },
+              {
+                "name": "admin.php",
+                "extension": ".php",
+                "lines": 175
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 12
+              }
+            ],
+            "directories": {}
+          },
+          "training-intro": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 21
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 22
+              }
+            ],
+            "directories": {}
+          },
+          "modules": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 43
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 67
+              }
+            ],
+            "directories": {}
+          },
+          "consultations": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 63
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 53
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 151
+              },
+              {
+                "name": "data.sql",
+                "extension": ".sql",
+                "lines": 55
+              }
+            ],
+            "directories": {}
+          },
+          "specialist-profile": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 45
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 35
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 78
+              }
+            ],
+            "directories": {}
+          },
+          "expertise": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 43
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 43
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 87
+              },
+              {
+                "name": "migration.sql",
+                "extension": ".sql",
+                "lines": 34
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 23
+              }
+            ],
+            "directories": {}
+          },
+          "consultation": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 71
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 47
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 131
+              },
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 33
+              }
+            ],
+            "directories": {}
+          },
+          "education": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 86
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 54
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 165
+              }
+            ],
+            "directories": {}
+          },
+          "visualizer": {
+            "files": [
+              {
+                "name": "html.php",
+                "extension": ".php",
+                "lines": 291
+              },
+              {
+                "name": "script.js",
+                "extension": ".js",
+                "lines": 67
+              },
+              {
+                "name": "style.css",
+                "extension": ".css",
+                "lines": 88
+              },
+              {
+                "name": "query.php",
+                "extension": ".php",
+                "lines": 57
+              },
+              {
+                "name": "index.php",
+                "extension": ".php",
+                "lines": 14
+              }
+            ],
+            "directories": {}
+          }
+        }
+      },
+      "tests": {
+        "files": [
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 177
+          }
+        ],
+        "directories": {
+          "MainSite": {
+            "files": [
+              {
+                "name": "HomePageTest.php",
+                "extension": ".php",
+                "lines": 126
+              }
+            ],
+            "directories": {}
+          },
+          "Admin": {
+            "files": [
+              {
+                "name": "AdminPanelTest.php",
+                "extension": ".php",
+                "lines": 45
+              }
+            ],
+            "directories": {}
+          },
+          "e2e": {
+            "files": [
+              {
+                "name": "docker-compose-test.yml",
+                "extension": ".yml",
+                "lines": 57
+              },
+              {
+                "name": "test.php",
+                "extension": ".php",
+                "lines": 4
+              },
+              {
+                "name": "run-tests.sh",
+                "extension": ".sh",
+                "lines": 24
+              },
+              {
+                "name": "README.md",
+                "extension": ".md",
+                "lines": 65
+              },
+              {
+                "name": "ansible.cfg",
+                "extension": ".cfg",
+                "lines": 5
+              }
+            ],
+            "directories": {}
+          }
+        }
+      },
+      "uploads": {
+        "files": [],
+        "directories": {
+          "images": {
+            "files": [],
+            "directories": {}
+          },
+          "documents": {
+            "files": [],
+            "directories": {}
+          },
+          "other": {
+            "files": [],
+            "directories": {}
+          }
+        }
+      },
+      "www": {
+        "files": [
+          {
+            "name": "README.md",
+            "extension": ".md",
+            "lines": 163
+          }
+        ],
+        "directories": {
+          "localhost": {
+            "files": [
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 66
+              }
+            ],
+            "directories": {
+              "sections": {
+                "files": [],
+                "directories": {
+                  "menu": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 11
+                      }
+                    ],
+                    "directories": {}
+                  },
+                  "footer": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 22
+                      }
+                    ],
+                    "directories": {}
+                  },
+                  "indications": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 9
+                      }
+                    ],
+                    "directories": {}
+                  },
+                  "program": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 5
+                      }
+                    ],
+                    "directories": {}
+                  },
+                  "team": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 12
+                      }
+                    ],
+                    "directories": {}
+                  },
+                  "contact": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 5
+                      }
+                    ],
+                    "directories": {}
+                  },
+                  "meta": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 25
+                      }
+                    ],
+                    "directories": {}
+                  },
+                  "about": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 27
+                      }
+                    ],
+                    "directories": {}
+                  }
+                }
+              },
+              "pages": {
+                "files": [
+                  {
+                    "name": "team.sql",
+                    "extension": ".sql",
+                    "lines": 67
+                  },
+                  {
+                    "name": "training.sql",
+                    "extension": ".sql",
+                    "lines": 135
+                  },
+                  {
+                    "name": "home.sql",
+                    "extension": ".sql",
+                    "lines": 66
+                  },
+                  {
+                    "name": "consultations.sql",
+                    "extension": ".sql",
+                    "lines": 59
+                  },
+                  {
+                    "name": "about-dbt.sql",
+                    "extension": ".sql",
+                    "lines": 125
+                  },
+                  {
+                    "name": "contact.sql",
+                    "extension": ".sql",
+                    "lines": 95
+                  },
+                  {
+                    "name": "specialists.sql",
+                    "extension": ".sql",
+                    "lines": 64
+                  }
+                ],
+                "directories": {}
+              },
+              "expertise": {
+                "files": [
+                  {
+                    "name": "schema.sql",
+                    "extension": ".sql",
+                    "lines": 29
+                  },
+                  {
+                    "name": "database.sqlite",
+                    "extension": ".sqlite",
+                    "lines": 32
+                  },
+                  {
+                    "name": "html.php",
+                    "extension": ".php",
+                    "lines": 48
+                  }
+                ],
+                "directories": {}
+              }
+            }
+          },
+          "visualizer": {
+            "files": [
+              {
+                "name": "schema.sql",
+                "extension": ".sql",
+                "lines": 5
+              }
+            ],
+            "directories": {
+              "pages": {
+                "files": [
+                  {
+                    "name": "home.sql",
+                    "extension": ".sql",
+                    "lines": 59
+                  }
+                ],
+                "directories": {}
+              },
+              "sections": {
+                "files": [],
+                "directories": {
+                  "team": {
+                    "files": [
+                      {
+                        "name": "data.sql",
+                        "extension": ".sql",
+                        "lines": 4
+                      }
+                    ],
+                    "directories": {}
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "stats": {
+        "files": [
+          {
+            "name": "detailed_stats.json",
+            "extension": ".json",
+            "lines": 10211
+          },
+          {
+            "name": "report.txt",
+            "extension": ".txt",
+            "lines": 318
+          }
+        ],
+        "directories": {}
+      }
+    }
+  },
+  "files_by_directory": {
+    ".": 30,
+    "./admin": 14,
+    "./admin/pages": 12,
+    "./admin/config": 2,
+    "./admin/scripts": 1,
+    "./admin/api/endpoints": 6,
+    "./admin/api": 2,
+    "./api": 3,
+    "./api/endpoints": 6,
+    "./api/tests": 2,
+    "./components/upload": 5,
+    "./components/files": 5,
+    "./components/gallery": 5,
+    "./components": 1,
+    "./config": 4,
+    "./home1": 5,
+    "./integrations/shortcodes/examples": 1,
+    "./integrations/shortcodes/core": 2,
+    "./integrations/webhooks/examples": 1,
+    "./integrations/webhooks/core": 1,
+    "./integrations/api/examples": 1,
+    "./integrations/api/core": 1,
+    "./integrations": 2,
+    "./js": 1,
+    "./modules/blog": 6,
+    "./modules/blog/templates": 2,
+    "./modules/rss": 4,
+    "./modules/sitemap": 4,
+    "./modules": 2,
+    "./scripts": 13,
+    "./sections/hero": 7,
+    "./sections/about": 7,
+    "./sections/indications": 7,
+    "./sections/program": 7,
+    "./sections": 2,
+    "./sections/footer": 6,
+    "./sections/menu": 7,
+    "./sections/media": 5,
+    "./sections/meta": 5,
+    "./sections/example": 6,
+    "./sections/about-intro": 1,
+    "./sections/team": 4,
+    "./sections/certification": 3,
+    "./sections/specialists-intro": 1,
+    "./sections/team-full": 5,
+    "./sections/contact-info": 4,
+    "./sections/contact-form": 4,
+    "./sections/map": 4,
+    "./sections/training-intro": 2,
+    "./sections/modules": 2,
+    "./sections/consultations": 4,
+    "./sections/specialist-profile": 3,
+    "./sections/expertise": 5,
+    "./sections/consultation": 4,
+    "./sections/education": 3,
+    "./sections/visualizer": 5,
+    "./tests/MainSite": 1,
+    "./tests/Admin": 1,
+    "./tests/e2e": 5,
+    "./tests": 1,
+    "./www/localhost/sections/menu": 1,
+    "./www/localhost/sections/footer": 1,
+    "./www/localhost/sections/indications": 1,
+    "./www/localhost/sections/program": 1,
+    "./www/localhost/sections/team": 1,
+    "./www/localhost/sections/contact": 1,
+    "./www/localhost/sections/meta": 1,
+    "./www/localhost/sections/about": 1,
+    "./www/localhost/pages": 7,
+    "./www/localhost": 1,
+    "./www/localhost/expertise": 3,
+    "./www": 1,
+    "./www/visualizer/pages": 1,
+    "./www/visualizer/sections/team": 1,
+    "./www/visualizer": 1,
+    "./stats": 2
+  },
+  "lines_by_directory": {
+    ".": 4852,
+    "./admin": 1066,
+    "./admin/pages": 2380,
+    "./admin/config": 132,
+    "./admin/scripts": 149,
+    "./admin/api/endpoints": 500,
+    "./admin/api": 124,
+    "./api": 569,
+    "./api/endpoints": 479,
+    "./api/tests": 238,
+    "./components/upload": 524,
+    "./components/files": 716,
+    "./components/gallery": 925,
+    "./components": 142,
+    "./config": 289,
+    "./home1": 349,
+    "./integrations/shortcodes/examples": 35,
+    "./integrations/shortcodes/core": 77,
+    "./integrations/webhooks/examples": 71,
+    "./integrations/webhooks/core": 73,
+    "./integrations/api/examples": 125,
+    "./integrations/api/core": 104,
+    "./integrations": 198,
+    "./js": 4,
+    "./modules/blog": 1629,
+    "./modules/blog/templates": 399,
+    "./modules/rss": 868,
+    "./modules/sitemap": 826,
+    "./modules": 110,
+    "./scripts": 472,
+    "./sections/hero": 271,
+    "./sections/about": 637,
+    "./sections/indications": 564,
+    "./sections/program": 676,
+    "./sections": 304,
+    "./sections/footer": 815,
+    "./sections/menu": 1430,
+    "./sections/media": 538,
+    "./sections/meta": 301,
+    "./sections/example": 473,
+    "./sections/about-intro": 18,
+    "./sections/team": 254,
+    "./sections/certification": 202,
+    "./sections/specialists-intro": 46,
+    "./sections/team-full": 646,
+    "./sections/contact-info": 164,
+    "./sections/contact-form": 353,
+    "./sections/map": 243,
+    "./sections/training-intro": 43,
+    "./sections/modules": 110,
+    "./sections/consultations": 322,
+    "./sections/specialist-profile": 158,
+    "./sections/expertise": 230,
+    "./sections/consultation": 282,
+    "./sections/education": 305,
+    "./sections/visualizer": 517,
+    "./tests/MainSite": 126,
+    "./tests/Admin": 45,
+    "./tests/e2e": 155,
+    "./tests": 177,
+    "./www/localhost/sections/menu": 11,
+    "./www/localhost/sections/footer": 22,
+    "./www/localhost/sections/indications": 9,
+    "./www/localhost/sections/program": 5,
+    "./www/localhost/sections/team": 12,
+    "./www/localhost/sections/contact": 5,
+    "./www/localhost/sections/meta": 25,
+    "./www/localhost/sections/about": 27,
+    "./www/localhost/pages": 611,
+    "./www/localhost": 66,
+    "./www/localhost/expertise": 109,
+    "./www": 163,
+    "./www/visualizer/pages": 59,
+    "./www/visualizer/sections/team": 4,
+    "./www/visualizer": 5,
+    "./stats": 10529
+  },
+  "config": {
+    "excluded_folders": [
+      ".git",
+      ".gradle",
+      ".idea",
+      ".mvn",
+      ".mypy_cache",
+      ".next",
+      ".nuxt",
+      ".output",
+      ".pytest_cache",
+      ".venv",
+      ".vs",
+      ".vscode",
+      "__pycache__",
+      "bin",
+      "bower_components",
+      "build",
+      "cache",
+      "coverage",
+      "dist",
+      "logs",
+      "migrations",
+      "node_modules",
+      "obj",
+      "packages",
+      "target",
+      "vendor",
+      "venv"
+    ],
+    "excluded_extensions": [
+      ".7z",
+      ".avi",
+      ".dll",
+      ".dylib",
+      ".gif",
+      ".gz",
+      ".ico",
+      ".jpeg",
+      ".jpg",
+      ".lock",
+      ".log",
+      ".mov",
+      ".mp3",
+      ".mp4",
+      ".png",
+      ".pyc",
+      ".pyd",
+      ".pyo",
+      ".rar",
+      ".so",
+      ".svg",
+      ".tar",
+      ".temp",
+      ".tmp",
+      ".wav",
+      ".zip"
+    ]
+  }
+}

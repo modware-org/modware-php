@@ -5,6 +5,7 @@
     <title>Project Statistics Visualization</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.0.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
@@ -87,9 +88,67 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
+        .export-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background: #2563eb;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: background-color 0.2s;
+            z-index: 1000;
+        }
+
+        .export-button:hover {
+            background: #1d4ed8;
+        }
+
+        .loading-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.8);
+            z-index: 1001;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #2563eb;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #2563eb;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-right: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
     </style>
 </head>
 <body>
+<button class="export-button" onclick="exportToPNG()">📷 Export as PNG</button>
+
+<div class="loading-overlay">
+    <div class="spinner"></div>
+    Generating PNG...
+</div>
+
+
 <div class="container">
     <h1 class="title">Project Statistics Dashboard</h1>
 
@@ -128,15 +187,81 @@
     </div>
 </div>
 
+<!-- Previous content remains the same -->
+
 <script>
     // Function to format large numbers
     function formatNumber(num) {
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
-    // Function to create charts
+    // Previous JavaScript code remains the same
+
+    async function exportToPNG() {
+        const loadingOverlay = document.querySelector('.loading-overlay');
+        loadingOverlay.style.display = 'flex';
+
+        try {
+            // Wait for a moment to ensure all charts are fully rendered
+            await new Promise(resolve => setTimeout(resolve, 1000));
+
+            // Get the container element
+            const element = document.querySelector('.container');
+
+            // Calculate the full height of the element
+            const fullHeight = element.scrollHeight;
+
+            // Create a canvas with the full dimensions
+            const canvas = await html2canvas(element, {
+                height: fullHeight,
+                windowHeight: fullHeight,
+                scrollY: -window.scrollY,
+                useCORS: true,
+                backgroundColor: '#f5f5f5',
+                scale: 2, // Higher quality
+                logging: false,
+                onclone: function(clonedDoc) {
+                    // Fix any specific elements in the cloned document if needed
+                    const clonedElement = clonedDoc.querySelector('.container');
+                    clonedElement.style.padding = '20px';
+                }
+            });
+
+            // Create download link
+            const link = document.createElement('a');
+            const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+            link.download = `project-stats-${timestamp}.png`;
+            link.href = canvas.toDataURL('image/png');
+
+            // Trigger download
+            link.click();
+        } catch (error) {
+            console.error('Error generating PNG:', error);
+            alert('Error generating PNG. Please try again.');
+        } finally {
+            loadingOverlay.style.display = 'none';
+        }
+    }
+
+    // Function to wait for charts to be ready
+    function waitForCharts(charts) {
+        return Promise.all(charts.map(chart =>
+            new Promise(resolve => {
+                if (chart.active) {
+                    chart.options.animation.onComplete = resolve;
+                } else {
+                    resolve();
+                }
+            })
+        ));
+    }
+
+    // Modify the chart creation to store references
+    let charts = [];
+
+    // Update the createChart function to store chart references
     function createChart(ctx, labels, data, title, type = 'bar') {
-        return new Chart(ctx, {
+        const chart = new Chart(ctx, {
             type: type,
             data: {
                 labels: labels,
@@ -149,7 +274,7 @@
                         '#60a5fa',
                         '#93c5fd',
                         '#bfdbfe',
-                    ],
+                    ].slice(0, data.length),
                     borderColor: '#ffffff',
                     borderWidth: 1
                 }]
@@ -161,10 +286,17 @@
                     legend: {
                         position: 'bottom',
                     }
+                },
+                animation: {
+                    duration: 500
                 }
             }
         });
+
+        charts.push(chart);
+        return chart;
     }
+
 
     // Function to create tree visualization
     function createDirectoryTree(data) {
@@ -233,7 +365,7 @@
         return root;
     }
 
-    // Load and process the JSON data
+    // Update the data loading to handle chart references
     fetch('stats/detailed_stats.json')
         .then(response => response.json())
         .then(data => {
@@ -255,6 +387,11 @@
 
             // Create directory tree
             createDirectoryTree(data.directory_structure);
+
+            // Wait for charts to be ready before allowing export
+            waitForCharts(charts).then(() => {
+                document.querySelector('.export-button').disabled = false;
+            });
         })
         .catch(error => {
             console.error('Error loading data:', error);

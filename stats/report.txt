@@ -1,0 +1,162 @@
+📊 Project Statistics Report 📊
+========================================
+
+📁 Total Files: 290
+📝 Total Lines of Code: 40492
+
+📑 Files by Extension:
+====================
+.php: 148 files (16,985 lines)
+.sql: 59 files (2,415 lines)
+.css: 28 files (4,161 lines)
+.md: 14 files (1,712 lines)
+.js: 12 files (1,234 lines)
+.sh: 11 files (434 lines)
+.json: 4 files (10,280 lines)
+.sqlite: 4 files (862 lines)
+.yml: 2 files (83 lines)
+no_extension: 2 files (212 lines)
+.cfg: 1 files (5 lines)
+.html: 1 files (230 lines)
+.pdf: 1 files (1,354 lines)
+.py: 1 files (187 lines)
+.txt: 1 files (318 lines)
+.xml: 1 files (20 lines)
+
+📂 Files by Directory:
+====================
+.: 30 files (4,852 lines)
+admin: 14 files (1,066 lines)
+scripts: 13 files (472 lines)
+admin/pages: 12 files (2,380 lines)
+sections/about: 7 files (637 lines)
+sections/hero: 7 files (271 lines)
+sections/indications: 7 files (564 lines)
+sections/menu: 7 files (1,430 lines)
+sections/program: 7 files (676 lines)
+www/localhost/pages: 7 files (611 lines)
+admin/api/endpoints: 6 files (500 lines)
+api/endpoints: 6 files (479 lines)
+modules/blog: 6 files (1,629 lines)
+sections/example: 6 files (473 lines)
+sections/footer: 6 files (815 lines)
+components/files: 5 files (716 lines)
+components/gallery: 5 files (925 lines)
+components/upload: 5 files (524 lines)
+home1: 5 files (349 lines)
+sections/expertise: 5 files (230 lines)
+sections/media: 5 files (538 lines)
+sections/meta: 5 files (301 lines)
+sections/team-full: 5 files (646 lines)
+sections/visualizer: 5 files (517 lines)
+tests/e2e: 5 files (155 lines)
+config: 4 files (289 lines)
+modules/rss: 4 files (868 lines)
+modules/sitemap: 4 files (826 lines)
+sections/consultation: 4 files (282 lines)
+sections/consultations: 4 files (322 lines)
+sections/contact-form: 4 files (353 lines)
+sections/contact-info: 4 files (164 lines)
+sections/map: 4 files (243 lines)
+sections/team: 4 files (254 lines)
+api: 3 files (569 lines)
+sections/certification: 3 files (202 lines)
+sections/education: 3 files (305 lines)
+sections/specialist-profile: 3 files (158 lines)
+www/localhost/expertise: 3 files (109 lines)
+admin/api: 2 files (124 lines)
+admin/config: 2 files (132 lines)
+api/tests: 2 files (238 lines)
+integrations: 2 files (198 lines)
+integrations/shortcodes/core: 2 files (77 lines)
+modules: 2 files (110 lines)
+modules/blog/templates: 2 files (399 lines)
+sections: 2 files (304 lines)
+sections/modules: 2 files (110 lines)
+sections/training-intro: 2 files (43 lines)
+stats: 2 files (10,529 lines)
+admin/scripts: 1 files (149 lines)
+components: 1 files (142 lines)
+integrations/api/core: 1 files (104 lines)
+integrations/api/examples: 1 files (125 lines)
+integrations/shortcodes/examples: 1 files (35 lines)
+integrations/webhooks/core: 1 files (73 lines)
+integrations/webhooks/examples: 1 files (71 lines)
+js: 1 files (4 lines)
+sections/about-intro: 1 files (18 lines)
+sections/specialists-intro: 1 files (46 lines)
+tests: 1 files (177 lines)
+tests/Admin: 1 files (45 lines)
+tests/MainSite: 1 files (126 lines)
+www: 1 files (163 lines)
+www/localhost: 1 files (66 lines)
+www/localhost/sections/about: 1 files (27 lines)
+www/localhost/sections/contact: 1 files (5 lines)
+www/localhost/sections/footer: 1 files (22 lines)
+www/localhost/sections/indications: 1 files (9 lines)
+www/localhost/sections/menu: 1 files (11 lines)
+www/localhost/sections/meta: 1 files (25 lines)
+www/localhost/sections/program: 1 files (5 lines)
+www/localhost/sections/team: 1 files (12 lines)
+www/visualizer: 1 files (5 lines)
+www/visualizer/pages: 1 files (59 lines)
+www/visualizer/sections/team: 1 files (4 lines)
+
+🚫 Excluded Folders:
+====================
+.git
+.gradle
+.idea
+.mvn
+.mypy_cache
+.next
+.nuxt
+.output
+.pytest_cache
+.venv
+.vs
+.vscode
+__pycache__
+bin
+bower_components
+build
+cache
+coverage
+dist
+logs
+migrations
+node_modules
+obj
+packages
+target
+vendor
+venv
+
+🚫 Excluded Extensions:
+====================
+.7z
+.avi
+.dll
+.dylib
+.gif
+.gz
+.ico
+.jpeg
+.jpg
+.lock
+.log
+.mov
+.mp3
+.mp4
+.png
+.pyc
+.pyd
+.pyo
+.rar
+.so
+.svg
+.tar
+.temp
+.tmp
+.wav
+.zip
