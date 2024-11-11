@@ -2,7 +2,7 @@
 
 A PHP-based CMS with modular architecture and API support.
 
-![stats.png](stats.png)
+![stats.png](stats/stats.png)
 
 ## Project Structure
 

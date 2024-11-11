@@ -183,11 +183,11 @@ class ProjectAnalyzer:
 
         return "\n".join(report)
 
-    def save_report(self, output_dir="stats"):
+    def save_report(self, output_dir="."):
         os.makedirs(output_dir, exist_ok=True)
 
         # Save detailed JSON report
-        with open(os.path.join(output_dir, "detailed_stats.json"), 'w') as f:
+        with open(os.path.join(output_dir, "stats.json"), 'w') as f:
             json.dump(self.stats, f, indent=2, default=str)
 
         # Save text report
@@ -198,7 +198,7 @@ def main():
     # Get project directory from user
     project_dir = input("Enter project directory path (or press Enter for current directory): ").strip()
     if not project_dir:
-        project_dir = "."
+        project_dir = ".."
 
     # Get additional folders to exclude
     print("\nEnter additional folders to exclude (one per line, empty line to finish):")

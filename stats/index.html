@@ -230,7 +230,7 @@
             // Create download link
             const link = document.createElement('a');
             const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-            link.download = `project-stats-${timestamp}.png`;
+            link.download = `stats-${timestamp}.png`;
             link.href = canvas.toDataURL('image/png');
 
             // Trigger download
@@ -366,7 +366,7 @@
     }
 
     // Update the data loading to handle chart references
-    fetch('stats/detailed_stats.json')
+    fetch('stats.json')
         .then(response => response.json())
         .then(data => {
             // Update summary statistics
