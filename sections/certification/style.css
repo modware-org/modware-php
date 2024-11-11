@@ -1,0 +1,118 @@
+.certification-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.certification-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.certification-section .section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.certification-section .section-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 3rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.certification-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .certification-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.certification-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.certification-document {
+    margin-top: auto;
+}
+
+.cert-download-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.cert-download-btn:hover {
+    background-color: #0056b3;
+}
+
+.certification-badges {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.badge-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.badge-item:hover {
+    transform: translateY(-5px);
+}
+
+.badge-icon {
+    width: 64px;
+    height: 64px;
+    margin-bottom: 1rem;
+}
+
+.badge-title {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.badge-description {
+    color: #666;
+    line-height: 1.5;
+}
+
+@media (max-width: 767px) {
+    .certification-section {
+        padding: 3rem 0;
+    }
+
+    .certification-section .section-title {
+        font-size: 2rem;
+    }
+
+    .certification-badges {
+        grid-template-columns: 1fr;
+    }
+}

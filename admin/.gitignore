@@ -4,10 +4,11 @@ composer.lock
 database.sqlite
 diagnostic_errors.json
 .phpunit.result.cache
-.init.sh
+admin.sqlite-shm
+admin.sqlite-wal
+admin.sqlite
 vendor
 .idea
-database.sqlite_admin.sqlite
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

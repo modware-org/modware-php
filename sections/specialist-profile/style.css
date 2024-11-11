@@ -1,0 +1,93 @@
+.specialist-profile {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.specialist-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+    .specialist-container {
+        grid-template-columns: 300px 1fr;
+    }
+}
+
+.specialist-header {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.specialist-header h2 {
+    margin: 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+.specialist-title {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: normal;
+}
+
+.specialist-photo {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.specialist-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.specialist-bio {
+    line-height: 1.6;
+    color: #444;
+}
+
+.specialist-specializations {
+    margin-top: 2rem;
+}
+
+.specialist-specializations h3 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.specialist-specializations ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.specialist-specializations li {
+    background-color: #f5f5f5;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+@media (max-width: 767px) {
+    .specialist-photo {
+        grid-row: 2;
+    }
+    
+    .specialist-bio {
+        grid-row: 3;
+    }
+    
+    .specialist-specializations {
+        grid-row: 4;
+    }
+}

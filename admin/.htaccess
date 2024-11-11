@@ -1,0 +1,43 @@
+# Protect directory
+Options -Indexes
+
+# Require authentication for direct file access
+<FilesMatch "\.(php|html?)$">
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+    Allow from ::1
+</FilesMatch>
+
+# Allow access to index.php and login.php
+<Files "index.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+<Files "login.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+# Protect .htaccess file itself
+<Files ".htaccess">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Disable script execution in uploads directory
+<Directory "uploads">
+    Options -ExecCGI
+    RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8
+    RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8
+    php_flag engine off
+</Directory>
+
+# Secure headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "same-origin"
+</IfModule>

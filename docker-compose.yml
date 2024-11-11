@@ -1,0 +1,27 @@
+services:
+  web:
+    build: .
+    ports:
+      - "8007:80"
+    volumes:
+      - .:/var/www/html
+      - ./data:/var/www/html/data
+      - ./logs:/var/www/html/logs
+      - php_logs:/var/log
+    env_file:
+      - .env.docker
+    environment:
+      - APACHE_DOCUMENT_ROOT=/var/www/html
+      - APP_ENV=${APP_ENV:-development}
+      - APP_DEBUG=${APP_DEBUG:-true}
+      - APP_URL=${APP_URL:-http://localhost:8007}
+      - DB_CONNECTION=${DB_CONNECTION:-sqlite}
+      - DB_PATH=${DB_PATH:-/var/www/html/data/database.sqlite}
+    restart: unless-stopped
+    command: php install.php
+
+volumes:
+  data:
+    driver: local
+  php_logs:
+    driver: local

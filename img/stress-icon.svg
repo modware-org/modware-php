@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+    <!-- Background Circle -->
+    <circle cx="100" cy="100" r="90" fill="#0a1657"/>
+
+    <!-- Shield Shape (Representing Protection) -->
+    <path d="M100 40
+             C140 40 160 60 160 100
+             C160 140 120 160 100 160
+             C80 160 40 140 40 100
+             C40 60 60 40 100 40"
+          fill="#4A90E2"
+          opacity="0.7"/>
+
+    <!-- Profile Silhouette -->
+    <path d="M85 70
+             C85 60 115 60 115 70
+             L115 100
+             C115 110 85 110 85 100 Z"
+          fill="white"/>
+
+    <!-- Protective Layers -->
+    <path d="M100 50
+             C130 50 150 70 150 100
+             C150 130 120 150 100 150"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          opacity="0.4"/>
+
+    <path d="M100 60
+             C120 60 140 80 140 100
+             C140 120 110 140 100 140"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          opacity="0.6"/>
+
+    <!-- Stabilizing Elements -->
+    <circle cx="100" cy="80" r="3" fill="white"/>
+
+    <!-- Grounding Lines -->
+    <line x1="70" y1="130" x2="130" y2="130"
+          stroke="white"
+          stroke-width="2"
+          opacity="0.5"/>
+
+    <line x1="60" y1="140" x2="140" y2="140"
+          stroke="white"
+          stroke-width="2"
+          opacity="0.4"/>
+
+    <!-- Support Structure -->
+    <path d="M60 120 C80 110 120 110 140 120"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          opacity="0.5"/>
+
+    <!-- Resilience Symbols -->
+    <g transform="translate(100,100)" opacity="0.3">
+        <circle cx="0" cy="0" r="30"
+                fill="none"
+                stroke="white"
+                stroke-width="1"
+                stroke-dasharray="4 2"/>
+        <circle cx="0" cy="0" r="40"
+                fill="none"
+                stroke="white"
+                stroke-width="1"
+                stroke-dasharray="4 2"/>
+    </g>
+
+    <!-- Stress Management Elements -->
+    <path d="M70 90 C85 85 115 85 130 90"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          opacity="0.4"/>
+
+    <path d="M75 150 C90 145 110 145 125 150"
+          fill="none"
+          stroke="white"
+          stroke-width="2"
+          opacity="0.3"/>
+
+    <!-- Balance Indicators -->
+    <circle cx="70" cy="110" r="5" fill="#4A90E2" opacity="0.6"/>
+    <circle cx="130" cy="110" r="5" fill="#4A90E2" opacity="0.6"/>
+</svg>

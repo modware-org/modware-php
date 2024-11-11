@@ -1,0 +1,66 @@
+- name: Test Docker Compose Deployment
+  hosts: localhost
+  gather_facts: yes
+  
+  tasks:
+    - name: Check if Docker is running
+      command: systemctl status docker
+      register: docker_status
+      ignore_errors: yes
+      changed_when: false
+      
+    - name: Ensure Docker is running
+      fail:
+        msg: "Docker is not running"
+      when: docker_status.rc != 0
+
+    - name: Create required directories
+      file:
+        path: "{{ playbook_dir }}/../../{{ item }}"
+        state: directory
+        mode: '0777'
+      with_items:
+        - logs
+        - data
+
+    - name: Build and start containers
+      community.docker.docker_compose_v2:
+        project_src: "{{ playbook_dir }}/../../"
+        state: present
+      register: compose_result
+      
+    - name: Wait for web service to be ready
+      uri:
+        url: "http://localhost:8007/test.php"
+        return_content: yes
+      register: webpage
+      until: "'PHP is working' in webpage.content"
+      retries: 30
+      delay: 2
+      
+    - name: Check logs directory permissions
+      community.docker.docker_container_exec:
+        container: php-web-1
+        command: stat -c "%a" /var/www/html/logs
+      register: logs_perms
+      failed_when: logs_perms.stdout != "777"
+      
+    - name: Check data directory permissions
+      community.docker.docker_container_exec:
+        container: php-web-1
+        command: stat -c "%a" /var/www/html/data
+      register: data_perms
+      failed_when: data_perms.stdout != "777"
+      
+    - name: Verify Apache configuration
+      community.docker.docker_container_exec:
+        container: php-web-1
+        command: apache2ctl -t
+      register: apache_config
+      failed_when: apache_config.rc != 0
+      
+    - name: Clean up
+      community.docker.docker_compose_v2:
+        project_src: "{{ playbook_dir }}/../../"
+        state: absent
+      when: cleanup is defined and cleanup

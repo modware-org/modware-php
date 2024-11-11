@@ -1,0 +1,146 @@
+.indications-section {
+    padding: 5rem 2rem;
+    background: var(--bg-gradient-light);
+}
+
+.indications-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.section-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.indications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.indication-card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.indication-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.indication-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.indication-title {
+    font-size: 1.3rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.indication-description {
+    color: var(--text-dark);
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.indications-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--primary-color);
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid var(--primary-color);
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: var(--primary-color);
+}
+
+.cta-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.3);
+}
+
+@media (max-width: 768px) {
+    .indications-section {
+        padding: 3rem 1rem;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .indications-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .indication-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Animation classes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.indication-card.animate {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Accessibility focus styles */
+.indication-card:focus-within {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.3);
+}
+
+/* High contrast mode support */
+@media (forced-colors: active) {
+    .indication-card {
+        border: 2px solid CanvasText;
+    }
+    
+    .cta-button {
+        border: 2px solid ButtonText;
+    }
+}

@@ -1,0 +1,51 @@
+# Protect directory
+Options -Indexes
+
+# Set JSON content type for API responses
+AddHandler application/json .json
+Header set Content-Type application/json
+
+# Enable CORS for API
+Header set Access-Control-Allow-Origin "*"
+Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
+Header set Access-Control-Allow-Headers "Content-Type"
+
+# Handle OPTIONS requests for CORS preflight
+RewriteEngine On
+RewriteCond %{REQUEST_METHOD} OPTIONS
+RewriteRule ^(.*)$ $1 [R=200,L]
+
+# Protect .htaccess file itself
+<Files ".htaccess">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Secure headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Referrer-Policy "same-origin"
+</IfModule>
+
+# Basic security measures
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    # Prevent access to dot files
+    RewriteRule (^|/)\.(.*)$ - [F]
+</IfModule>
+
+# Require authentication for all API access
+<FilesMatch "\.(php)$">
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+    Allow from ::1
+</FilesMatch>
+
+# Allow access to index.php (API endpoint)
+<Files "index.php">
+    Order Allow,Deny
+    Allow from all
+</Files>

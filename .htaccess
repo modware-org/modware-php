@@ -1,0 +1,10 @@
+RewriteEngine On
+RewriteBase /
+
+# Route visualizer to sections/visualizer/index.php
+RewriteRule ^visualizer/?$ /sections/visualizer/index.php [L]
+
+# Existing rules
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php [L]

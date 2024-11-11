@@ -1,0 +1,105 @@
+.sections-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.draggable {
+    cursor: move;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #f9f9f9;
+    transition: transform 0.2s;
+}
+
+.draggable.dragging {
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+
+.draggable.drag-over {
+    border: 2px dashed #007bff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.site {
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.page {
+    margin-top: 10px;
+    background-color: #f5f5f5;
+    padding: 10px;
+}
+
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.status-badge {
+    padding: 3px 8px;
+    border-radius: 4px;
+    font-size: 0.8em;
+}
+
+.status-badge.status-draft {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.status-badge.status-published {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.status-badge.status-archived {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+input, select, button {
+    padding: 5px;
+}
+
+.remove-form button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.remove-form button:hover {
+    background-color: #c82333;
+}
+
+.section {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

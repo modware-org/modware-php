@@ -1,0 +1,54 @@
+# Disable script execution
+Options -ExecCGI
+RemoveHandler .php .phtml .php3 .php4 .php5 .php7 .php8
+RemoveType .php .phtml .php3 .php4 .php5 .php7 .php8
+php_flag engine off
+
+# Protect against accessing hidden files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Allow only specific file types
+<FilesMatch "(?i)\.(jpg|jpeg|png|gif|pdf|doc|docx|xls|xlsx|txt)$">
+    Order Allow,Deny
+    Allow from all
+</FilesMatch>
+
+# Deny access to all other file types
+<FilesMatch ".*">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Set proper content types
+AddType image/jpeg .jpg .jpeg
+AddType image/png .png
+AddType image/gif .gif
+AddType application/pdf .pdf
+AddType application/msword .doc
+AddType application/vnd.openxmlformats-officedocument.wordprocessingml.document .docx
+AddType application/vnd.ms-excel .xls
+AddType application/vnd.openxmlformats-officedocument.spreadsheetml.sheet .xlsx
+AddType text/plain .txt
+
+# Enable CORS for media files
+<IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set X-Content-Type-Options "nosniff"
+</IfModule>
+
+# Prevent directory listing
+Options -Indexes
+
+# Force download of certain file types
+<FilesMatch "(?i)\.(pdf|doc|docx|xls|xlsx)$">
+    ForceType application/octet-stream
+    Header set Content-Disposition attachment
+</FilesMatch>
+
+# Set caching headers for images
+<FilesMatch "(?i)\.(jpg|jpeg|png|gif)$">
+    Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>

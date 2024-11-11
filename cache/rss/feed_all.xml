@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+  <title>DBT Unity Blog</title>
+  <link>http://localhost:8007</link>
+  <description>Новости и статьи о диалектической поведенческой терапии</description>
+  <language>ru</language>
+  <lastBuildDate>Sun, 10 Nov 2024 17:03:53 +0000</lastBuildDate>
+  <generator>DBT Unity RSS Generator</generator>
+  <atom:link href="http://localhost:8007/index.php" rel="self" type="application/rss+xml" />
+  <item>
+    <title>Введение в диалектическую поведенческую терапию</title>
+    <link>http://localhost:8007/blog/introduction-to-dbt</link>
+    <guid isPermaLink="true">http://localhost:8007/blog/introduction-to-dbt</guid>
+    <pubDate>Sun, 10 Nov 2024 17:03:44 +0000</pubDate>
+    <dc:creator>admin</dc:creator>
+    <content:encoded><![CDATA[<!-- Content will be added through admin panel -->]]></content:encoded>
+    <description><![CDATA[...]]></description>
+  </item>
+</channel>
+</rss>
